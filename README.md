@@ -67,7 +67,7 @@ Add your name and student number to the README.md file, as shown below:
 ~~~markdown
 # React In-class Exam, October 2025
 
-Your Name, Student Number
+Eryk Czerniak, 20105873
 ...
 ~~~
 
@@ -89,3 +89,7 @@ Once you have created your GitHub repository you can submit it to Moodle (no nee
 You can submit it here:
 
 [https://moodle.setu.ie/mod/assign/view.php?id=4606492](https://moodle.setu.ie/mod/assign/view.php?id=4606492)
+
+# React In-class Exam, October 2025
+
+Eryk Czerniak, 20105873

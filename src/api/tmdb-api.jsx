@@ -88,3 +88,17 @@ export const getMovie = (args) => {
       throw error
    });
   };
+
+  export const getTrendingMovies = async () => {
+  const response = await fetch('https://api.themoviedb.org/3/trending/movie/day?language=en-US', {
+    headers: {
+      accept: 'application/json',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNmE2YTMxNzBlODNjNDUxMWRkMjMwNzMxZGQ0OGI0MCIsIm5iZiI6MTc1OTgzMzY0Ny44NSwic3ViIjoiNjhlNGVlMmZiZWFkMjU4MjBjOWNiNTMwIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.tUUQX9NzgsV_zHZJ-gFaeZOutaqsdZgVrd9HRdflnME'
+    }
+  });
+  if (!response.ok) {
+    throw new Error('Failed to fetch trending movies');
+  }
+  return response.json();
+};
+
